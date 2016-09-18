@@ -33,6 +33,7 @@ app.controller("myCtrl", function($scope, $http) {
 	for(var j = 0; j < $scope.itemcar.length; j++) {
 			$scope.alltotal += $scope.itemcar[j].total;
 }
+	$scope.alltotal = $scope.alltotal.toFixed(2);
 	$scope.len=$scope.itemcar.length;
 	}
 	$scope.start = function() {

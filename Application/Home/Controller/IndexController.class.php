@@ -31,9 +31,16 @@ class IndexController extends Controller {
 		$this -> display(background);
 	}
 	public function opencart() {
+		if ($_SESSION['name'] != null) {
 		$this -> display(buycar);
+		} else {
+			$this->error('你还没有登陆，请登录！', 'openlogin', 3);
+			
+		}
 	}
-
+	public function openinfo() {
+		$this -> display(product);
+	}
 
 
 
@@ -109,7 +116,6 @@ class IndexController extends Controller {
 	
 
 	public function login($username = null, $password = null) {
-
 		$password = trim($password);
 		//选择表
 		$M = M('account');
@@ -216,8 +222,6 @@ class IndexController extends Controller {
             $data['prdpingjia'] = $prdpingjia;
             $data['prddianpu'] = $prddianpu;
             $data['prdimgsrc'] = $prdimgsrc;
-           
-           
             // 更新的条件
             $condition['id'] = $id;
             $result = $listtable -> where($condition) -> save($data);

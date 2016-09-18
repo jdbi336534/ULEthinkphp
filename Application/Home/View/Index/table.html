@@ -79,47 +79,47 @@
 						<div class="modal-body">
 							<div class="input-group">
 								<span class="input-group-addon">商品名</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的商品名" ng-model="prdname1" ng-value="{{33}}">
+								<input type="text" class="form-control" placeholder="请输入要修改的商品名"  ng-model="name1">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">关键字1</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的关键字1" ng-model="prdfont1">
+								<input type="text" class="form-control" placeholder="请输入要修改的关键字1" ng-model="font1">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">关键字中间名</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的关键字中间名" ng-model="prdi">
+								<input type="text" class="form-control" placeholder="请输入要修改的关键字中间名" ng-model="i">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">关键字2</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的关键字2" ng-model="prdfont2">
+								<input type="text" class="form-control" placeholder="请输入要修改的关键字2" ng-model="font2">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">商品名补充</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的商品名补充" ng-model="prdname2">
+								<input type="text" class="form-control" placeholder="请输入要修改的商品名补充" ng-model="name2">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">价格</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的商品价格" ng-model="prdprice">
+								<input type="text" class="form-control" placeholder="请输入要修改的商品价格" ng-model="price">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">图片路径</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的图片路径" ng-model="prdimgsrc">
+								<input type="text" class="form-control" placeholder="请输入要修改的图片路径" ng-model="imgsrc">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">店铺名</span>
-								<input type="text" class="form-control" placeholder="请输入要修改的店铺名" ng-model="prddianpu">
+								<input type="text" class="form-control" placeholder="请输入要修改的店铺名" ng-model="dianpu">
 							</div>
 							<br/>
 							<div class="input-group">
 								<span class="input-group-addon">？人评价</span>
-								<input type="text" class="form-control" placeholder="请输入要评价的人数" ng-model="prdpingjia">
+								<input type="text" class="form-control" placeholder="请输入要评价的人数" ng-model="pingjia">
 							</div>
 						</div>
 						<div class="modal-footer">

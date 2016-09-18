@@ -6,8 +6,7 @@ $(document).ready(function() {
 	var flagcode = false;
 	//手机号码正则判断
 	checkphone("#userMobile", ".tip", "请输入正确的手机号码，方便接受订单通知，找回密码。", "输入的号码有误！", /^[1-3]\d{10}$/, "num");
-	//验证码判断
-	//check("#mobileCode",".tip","","验证码错误！");
+	//密码正则判断
 	checkpwd("#password", ".tip", "必须包含大小写字母和数字的组合，不能使用特殊字符，长度在6-20之间", "密码格式错误！", /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/, "str");
 	//两次密码是否相等判断
 	key();

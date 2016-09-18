@@ -51,9 +51,9 @@ $(document).ready(function() {
 	});
 	//左边菜单
 	$(".cate-menu a").hover(function(){
-		$(this).parent().css("background","url(img/headmenu/sprite_category.png) no-repeat 0 -16px");
+		$(this).parent().css("background","url(/thinkphp3.2.3/Public/img/headmenu/sprite_category.png) no-repeat 0 -16px");
 	},function(){
-		$(this).parent().css("background","url(img/headmenu/btn-cate-normal.png) no-repeat 0 0");
+		$(this).parent().css("background","url(/thinkphp3.2.3/Public/img/headmenu/btn-cate-normal.png) no-repeat 0 0");
 	});
 	//菜单li划过旋转效果
 	$(".mod-category dt").rotate({ 
@@ -291,7 +291,14 @@ function scrollfun(){
 //	});
 //}
 
-
+	
+//	cartmany();
+//	function cartmany(){
+//		$.getJSON('/thinkphp3.2.3/index.php/Home/Index/readlistid',function(data){
+//			//alert(data.length);
+//			$("shopcart-num").html(data.length);
+//		});
+//	}
 
 
 

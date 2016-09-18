@@ -50,9 +50,9 @@ $(document).ready(function() {
 
 	//登录界面轮播图设置
 	var times = 0;
-	//	$("#wrapper .lunbo .wrapper-box").eq(0).css("background","url(img/login/1.jpg) no-repeat center center");
-	//	$("#wrapper .lunbo .wrapper-box").eq(2).css("background","url(img/login/3.jpg) no-repeat center center");
-	//	$("#wrapper .lunbo .wrapper-box").eq(1).css("background","url(img/login/2.jpg) no-repeat center center");
+		$("#wrapper .lunbo .wrapper-box").eq(0).css("background","url(/thinkphp3.2.3/Public/img/login/1.jpg) no-repeat center center");
+		$("#wrapper .lunbo .wrapper-box").eq(2).css("background","url(/thinkphp3.2.3/Public/img/login/3.jpg) no-repeat center center");
+		$("#wrapper .lunbo .wrapper-box").eq(1).css("background","url(/thinkphp3.2.3/Public/img/login/2.jpg) no-repeat center center");
 	$("#wrapper .lunbo .wrapper-box").eq(0).fadeIn(1000);
 	setInterval(function() {
 		times++;

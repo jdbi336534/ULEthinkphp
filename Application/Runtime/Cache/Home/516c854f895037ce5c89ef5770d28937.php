@@ -11,6 +11,7 @@
 		<!--[if IE]>
 		<script src="/thinkphp3.2.3/Public/js/jquery-1.10.1.min.js"></script>
 	    <![endif]-->
+	    <script type="text/javascript" src="/thinkphp3.2.3/Public/js/jQueryRotate.2.2.js"></script>
 		<script type="text/javascript" src="/thinkphp3.2.3/Public/js/register.js"></script>
 		<script type="text/javascript" src="/thinkphp3.2.3/Public/js/globle.js"></script>
 
@@ -26,7 +27,7 @@
 						</li>
 					</ul>
 					<ul class="fr userinfo">
-						<li class="welcome ">您好，欢迎来到邮乐网！</li>
+						<li class="welcome "><a href="#"><?php echo (session('name')); ?></a> 您好，欢迎来到邮乐网！</li>
 						<li class="login">
 							<a href="/thinkphp3.2.3/index.php/Home/Index/openlogin">[请登录] </a>
 							<a href="<?php echo U('Index/openurl');?>" target="_blank">[免费注册]</a>

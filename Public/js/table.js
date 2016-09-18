@@ -31,20 +31,29 @@ app.controller("backCtrl", function($scope, $http) {
 	$scope.getindex=function(index){
 		$scope.index=index;
 		$scope.id=$scope.categorie[index].id;
-		console.log($scope.id);
+		$scope.name1=$scope.categorie[index].prdname1;
+		$scope.font1=$scope.categorie[index].prdfont1;
+		$scope.i=$scope.categorie[index].prdi;
+		$scope.font2=$scope.categorie[index].prdfont2;
+		$scope.name2=$scope.categorie[index].prdname2;
+		$scope.price=$scope.categorie[index].prdprice;
+		$scope.imgsrc=$scope.categorie[index].prdimgsrc;
+		$scope.dianpu=$scope.categorie[index].prddianpu;
+		$scope.pingjia=$scope.categorie[index].prdpingjia;
+		//console.log($scope.id);
 		//alert(index);
 		
 	}
 	$scope.gengxin=function(){
-		var num1=$scope.prdname1;
-		var num2=$scope.prdfont1;
-		var num3=$scope.prdi;
-		var num4=$scope.prdfont2;
-		var num5=$scope.prdname2;
-		var num6=$scope.prdprice;
-		var num7=$scope.prdimgsrc;
-		var num8=$scope.prddianpu;
-		var num9=$scope.prdpingjia;
+		var num1=$scope.name1;
+		var num2=$scope.font1;
+		var num3=$scope.i;
+		var num4=$scope.font2;
+		var num5=$scope.name2;
+		var num6=$scope.price;
+		var num7=$scope.imgsrc;
+		var num8=$scope.dianpu;
+		var num9=$scope.pingjia;
 		$.post('/thinkphp3.2.3/index.php/Home/Index/xiudatabase',{
 			id:$scope.id,
 			prdprice:num6,
